@@ -32,3 +32,10 @@ buttonList.forEach(btn => {
         btn.classList.remove('ativa');
     };
 });
+
+function changeVolume(volume) {
+    const audioElements = document.querySelectorAll('audio');
+    audioElements.forEach(audio => {
+        audio.volume = volume;
+    });
+}
